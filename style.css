@@ -125,9 +125,9 @@ body{
 }
 .tracks{
     font-family: var(--poppins);
-    font-size: 30px;
+    font-size: 3.75vmax;
     font-weight: bold;
-
+    white-space: wrap;
     margin-bottom: -20px;
     list-style: none;
 }
@@ -223,6 +223,50 @@ body{
 }
 @media (min-width: 1000px){
     .nayeon{
+        max-width: 40%;
+        position: absolute;
+        right: 0;
+        left: 60%;
+        top: 70%;
+
+        overflow: hidden;
+    }
+
+    .hero__text{
+        
+        margin-left: 50px;
+        padding-top: 20px;
+        position: absolute;
+        height: 600px;
+        right: 50%;
+    }
+    .float-box{
+        position: absolute;
+
+        height: 50vh;
+        width: 55%;
+        top: 40%;
+        right: 45%;
+        border-radius: 0 50px 50px 0;
+    }
+    .bubbles{
         display: none;
+    }
+    .tracklist{
+        padding-top: 45px;
+        padding-right: 150px;
+        text-align: right;
+    }
+    .tracks{
+        font-size: 3vmax;
+    }
+    .content{
+        display: none     
+    }
+    .footer{
+        position: absolute;
+        
+        top: 95%;
+        z-index: 10000;
     }
 }
