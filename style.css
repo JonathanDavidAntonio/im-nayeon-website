@@ -251,14 +251,18 @@ body{
     }
 }
 @media (min-width: 1000px){
-    
+    .body{
+        overflow: hidden;
+    }
     .nayeon{
         max-width: 50%;
         height: 90vh;
         right: 0;
-        left: 60%;
-        top: 40%;
+        left: 66%;
+        top: 50%;
         bottom: 0;
+
+
     }
 
     .hero__text{
@@ -303,16 +307,5 @@ body{
     .col{
         margin: 0;
     }
-    /* .footer{
-        background-color: #f9f28d;
-        height: 50px;
-        width: 100%;
-        bottom: 0;
-    }
-    .footer h1{
-        font-family: var(--poppins);
-        font-size: 10px;
-        margin-left: 10px;
-    } */
     
 }
