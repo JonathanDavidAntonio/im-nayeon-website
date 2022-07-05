@@ -125,10 +125,10 @@ body{
 }
 .tracks{
     font-family: var(--poppins);
-    font-size: 3.75vmax;
+    font-size: 2.75vmax;
     font-weight: bold;
     white-space: wrap;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
     list-style: none;
 }
 
@@ -165,7 +165,7 @@ body{
     background-color: #f9f28d;
     height: 100px;
     width: 100%;
-    position: absolute;
+    
 }
 .footer h1{
     font-family: var(--poppins);
@@ -176,15 +176,26 @@ body{
 @media (min-width: 500px) {
     
     .hero__text{
-        position: absolute;
         z-index: 1000;
-        background-color: black;
-        opacity: 0.5;
-        height: 90px;
+        opacity: 0.75;
+        height: fit-content;
+        width: fit-content;
         top: 300px;
+        
+    }
+    .hero__text__title{
+        font-size: 5vmax;
     }
     .hero__text__subtitle{
         padding-bottom: 0;
+    }
+    .tracklist{
+        padding: 0;
+        padding-top: 20px;
+    }
+    .float-box{
+        width: 80%;
+        margin: 0 auto;
     }
     .nayeon{
         max-width: 70%;
@@ -195,9 +206,27 @@ body{
         bottom: 0;
         margin: auto;
     }
+    .bubbles{
+        position: relative;
+        max-width: 100%;
+        z-index: 3;
+        margin-top: -200px;
+        margin-bottom: 0;
+    }
+    .row{
+        display: flex;
+    }
+    .col h1{
+        font-size: 3vmax;
+    }
+    .col p{
+        font-size: 9px;
+    }
 }
 @media (min-width: 800px){
-
+    .hero__text{
+        font-size: 5vmax;
+    }
     .float-box{
         height: 40vh;
         width: 80%;
@@ -210,7 +239,7 @@ body{
         position: relative;
         max-width: 100%;
         z-index: 3;
-        margin-top: -150px;
+        margin-top: -200px;
         margin-bottom: 0;
     }
     .row{
@@ -222,51 +251,68 @@ body{
     }
 }
 @media (min-width: 1000px){
+    
     .nayeon{
-        max-width: 40%;
-        position: absolute;
+        max-width: 50%;
+        height: 90vh;
         right: 0;
         left: 60%;
-        top: 70%;
-
-        overflow: hidden;
+        top: 40%;
+        bottom: 0;
     }
 
     .hero__text{
-        
-        margin-left: 50px;
-        padding-top: 20px;
         position: absolute;
-        height: 600px;
-        right: 50%;
+        height: fit-content;
+        width: fit-content;
+        margin: -200px auto 0 auto;
+    }
+    .hero__text__title{
+        font-size: 7vmax;
+    }
+    .hero__text__subtitle{
+        font-size: 3.75vmax;
     }
     .float-box{
-        position: absolute;
-
-        height: 50vh;
-        width: 55%;
-        top: 40%;
-        right: 45%;
-        border-radius: 0 50px 50px 0;
+        display: none;
+        height: 40vh;
+        width: fit-content;
+        padding: 2em;
+        /* top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0; */
+        border-radius: 50px 50px 50px 50px;
+        margin: -280px auto 0 auto;
+        z-index: auto;
     }
     .bubbles{
         display: none;
     }
     .tracklist{
-        padding-top: 45px;
-        padding-right: 150px;
-        text-align: right;
+        margin: 0;
+        padding: 0 ;
+        text-align: center;
     }
     .tracks{
         font-size: 3vmax;
     }
     .content{
-        display: none     
+        margin-top: 50px;
     }
-    .footer{
-        position: absolute;
-        
-        top: 95%;
-        z-index: 10000;
+    .col{
+        margin: 0;
     }
+    /* .footer{
+        background-color: #f9f28d;
+        height: 50px;
+        width: 100%;
+        bottom: 0;
+    }
+    .footer h1{
+        font-family: var(--poppins);
+        font-size: 10px;
+        margin-left: 10px;
+    } */
+    
 }
